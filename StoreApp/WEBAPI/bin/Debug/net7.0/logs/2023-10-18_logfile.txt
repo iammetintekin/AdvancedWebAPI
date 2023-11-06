@@ -1,0 +1,10 @@
+2023-10-18 13:55:10.3593 ERROR Something went wrong : Error mapping types.
+
+Mapping types:
+EntityQueryable`1 -> IQueryable`1
+Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Project.Entity.Models.Product, Project.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Linq.IQueryable`1[[Project.Entity.DTOs.Product.ListProductDto, Project.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-10-18 13:55:54.4131 ERROR Something went wrong : Error mapping types.
+
+Mapping types:
+EntityQueryable`1 -> IQueryable`1
+Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Project.Entity.Models.Product, Project.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Linq.IQueryable`1[[Project.Entity.DTOs.Product.ListProductDto, Project.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]

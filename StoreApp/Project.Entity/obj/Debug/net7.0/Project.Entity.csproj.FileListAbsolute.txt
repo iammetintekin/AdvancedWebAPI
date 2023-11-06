@@ -1,0 +1,12 @@
+C:\Users\metot\source\repos\StoreApp\Project.Entity\bin\Debug\net7.0\Project.Entity.deps.json
+C:\Users\metot\source\repos\StoreApp\Project.Entity\bin\Debug\net7.0\Project.Entity.dll
+C:\Users\metot\source\repos\StoreApp\Project.Entity\bin\Debug\net7.0\Project.Entity.pdb
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.AssemblyInfoInputs.cache
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.AssemblyInfo.cs
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.csproj.CoreCompileInputs.cache
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.dll
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\refint\Project.Entity.dll
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.pdb
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\ref\Project.Entity.dll
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.csproj.AssemblyReference.cache

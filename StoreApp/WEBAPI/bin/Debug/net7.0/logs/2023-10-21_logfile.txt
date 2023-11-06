@@ -1,0 +1,5 @@
+2023-10-21 15:35:59.5212 INFO {"Model":"OnActionExecuting","Controller":"Products","Action":"GetAll","Id":null,"Created":"2023-10-21T12:35:59.5080024Z"}
+2023-10-21 15:36:26.9679 INFO {"Model":"OnActionExecuting","Controller":"Products","Action":"Get","Id":"2","Created":"2023-10-21T12:36:26.9677745Z"}
+2023-10-21 15:38:42.6493 INFO {"Model":"OnActionExecuting","Controller":"Products","Action":"Update","Id":"2","Created":"2023-10-21T12:38:42.6492796Z"}
+2023-10-21 15:38:59.2380 INFO {"Model":"OnActionExecuting","Controller":"Products","Action":"PartialUpdateOneBlog","Id":"2","Created":"2023-10-21T12:38:59.2379946Z"}
+2023-10-21 15:39:06.3939 INFO {"Model":"OnActionExecuting","Controller":"Products","Action":"PartialUpdateOneBlog","Id":"2","Created":"2023-10-21T12:39:06.3938533Z"}

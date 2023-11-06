@@ -1,0 +1,12 @@
+2023-10-19 15:38:46.3287 ERROR Something went wrong : The Project.Entity.Models.Product with ID : 30 couldn't found in database.
+2023-10-19 15:39:09.8916 ERROR Something went wrong : The Project.Entity.Models.Product with ID : 30 couldn't found in database.
+2023-10-19 16:13:16.2147 ERROR Something went wrong : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Product -> UpdateProductDto
+Project.Entity.Models.Product -> Project.Entity.DTOs.Product.UpdateProductDto
+2023-10-19 16:13:44.2336 ERROR Something went wrong : Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Product -> UpdateProductDto
+Project.Entity.Models.Product -> Project.Entity.DTOs.Product.UpdateProductDto
