@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Project.Entity.DTOs.Identity;
 using Project.Entity.DTOs.Product;
 using Project.Entity.Models;
 
@@ -12,6 +13,7 @@ namespace WEBAPI.Utilities.AutoMapper
             CreateMap<Product, UpdateProductDto>();
             CreateMap<Product, ProductDto>();
             CreateMap<CreateProductDto, Product>();
+            CreateMap<UserForRegistrationDto, User>();
         }
     }
 }

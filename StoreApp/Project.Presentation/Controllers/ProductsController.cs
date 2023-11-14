@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Project.Entity.DTOs.Product; 
@@ -21,39 +22,49 @@ namespace WEBAPIFramework.Controllers
         private readonly IServiceManager _serviceManager; 
         public ProductsController(IServiceManager serviceManager)
         {
-            _serviceManager = serviceManager; 
+            _serviceManager = serviceManager;
         }
-        //[ValidationAttributeFilter]
-        [HttpGet(Name = "GetAllAsync")]
-        [HttpHead]
-      // [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
-        [ResponseCache(Duration = 60)]// program cs den yeni tanımlandı ve artık controllerin tüm
-        // endpointler 5 mins profilini kullanıyor GetAll methodu hariç.
+        //[ServiceFilter(typeof(ValidateMediaTypeAttribute))]
+        //[ValidationAttributeFilter] 
+        // [ResponseCache(Duration = 60)]
+        //program cs den yeni tanımlandı ve artık controllerin tüm
+        //endpointler 5 mins profilini kullanıyor GetAll methodu hariç.
         //1 kere istek attıktan sonra 60 saniye boyunca ne kadar istek gelirse gelsin datayı yenilemez cahdeki datayı gösterir.
         //60 saniye sonra güncellenen datalar listelenir.
         // headerstaki age özelliği ile isteğin kaç saniye beklediği yazıyor
+   
+        [HttpGet]
+        [ActionName("GetAllAsync")]
+        [HttpHead]
+        [Authorize]
         public async Task<IActionResult> GetAllAsync([FromQuery]ProductRequestParameters Parameters)
         { 
             var paged_data = await _serviceManager.ProductService.GetAllAsync(Parameters,false);
             Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paged_data.meta));
             // xml veya json formatında config yapıldı.
-            return Ok(paged_data.products);
+            return StatusCode(201, paged_data.products);
         }
+        [Authorize] 
         [HttpGet("{id:int}",Name ="GetbyIdAsync")]
         public async Task<IActionResult> GetAsync([FromRoute(Name = "id")] int id)
         {
             var data = await _serviceManager.ProductService.GetByIdAsync(id, false);  
-            return Ok(data);
+            return StatusCode(201, data);
         }
-
+        /// <summary>
+        /// Ürün oluuşturma yetkili admin
+        /// </summary>
+        /// <param name="CreateProductDto"></param>
+        /// <returns></returns>
+        [Authorize(Roles = "Admin,Personel")]
         [HttpPost(Name = "CreateAsync")]
         [ServiceFilter(typeof(ValidationFilterAttribute))] 
         public async Task<IActionResult> CreateAsync([FromBody] CreateProductDto CreateProductDto)
         {
             var create_result = await _serviceManager.ProductService.CreateSingleAsync(CreateProductDto);
             return StatusCode(201, create_result);
-
         }
+        [Authorize(Roles = "Admin,Personel")] 
         [HttpPut("{id:int}")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public IActionResult UpdateAsync([FromRoute(Name = "id")] int id, [FromBody] UpdateProductDto UpdateProductDto)
@@ -62,6 +73,7 @@ namespace WEBAPIFramework.Controllers
             return NoContent(); 
         }
         [HttpDelete("{id:int}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteByIdAsync([FromRoute(Name = "id")] int id)
         {
             _serviceManager.ProductService.DeleteByIdAsync(id, false);
@@ -69,7 +81,7 @@ namespace WEBAPIFramework.Controllers
         }
 
         [HttpPatch("{id:int}")]
-        public async Task<IActionResult> PartialUpdateOneBlogAsync([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<UpdateProductDto> ProductPatch)
+        public async Task<IActionResult> PartialUpdateOneProductAsync([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<UpdateProductDto> ProductPatch)
         {
             if (ProductPatch is null)
                 return BadRequest(ModelState);
@@ -89,6 +101,7 @@ namespace WEBAPIFramework.Controllers
         }
 
         [HttpOptions]
+        [Authorize] 
         public IActionResult GetProductsOptions()
         {
             Response.Headers.Add("Allow", "GET,PUT,POST,PATCH,DELETE,HEAD,OPTIONS");

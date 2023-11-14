@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -39,7 +40,7 @@ builder.Services.Configure<ApiBehaviorOptions>(cfg =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddMemoryCache(); // hýz sýnýrlamada gerekli
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureUnitOfWork();
 builder.Services.ConfigureServiceManager();
@@ -51,6 +52,10 @@ builder.Services.AddCustomMediaTypes();
 builder.Services.ConfigureVersioning();
 builder.Services.ConfigureResponseCaching();
 builder.Services.ConfigureHttpCacheHeaders();
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();
+builder.Services.ConfigureIdentity();
+builder.Services.ConfigureJwt(builder.Configuration);
 
 // runtime ifadesi bu yüzden webapi tanýmlamasý yapýlýr
 builder.Services.AddAutoMapper(typeof(Program));
@@ -73,12 +78,13 @@ if (app.Environment.IsProduction())
     app.UseHsts(); //Adds security headers
 }
 app.UseHttpsRedirection();
-
+app.UseIpRateLimiting();
 app.UseCors("CorsPolicy");
 // corstan sonra çaðrýlmasý tavsiye edilir.
 app.UseResponseCaching();
 app.UseHttpCacheHeaders(); // cache ile ilgili etag, expires, modified gibi yeni headerler ekler
 // -- önemli
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

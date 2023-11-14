@@ -9,3 +9,4 @@ C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Release\net7.0\Project.E
 C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Release\net7.0\refint\Project.Entity.dll
 C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Release\net7.0\Project.Entity.pdb
 C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Release\net7.0\ref\Project.Entity.dll
+C:\Users\metot\source\repos\StoreApp\Project.Entity\obj\Release\net7.0\Project.Entity.csproj.AssemblyReference.cache

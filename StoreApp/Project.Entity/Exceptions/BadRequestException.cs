@@ -8,7 +8,7 @@ namespace Project.Entity.Exceptions
 {
     public abstract class BadRequestException :Exception
     {
-        protected BadRequestException(string Message) :base(Message)
+        public BadRequestException(string Message) :base(Message)
         {
             
         }

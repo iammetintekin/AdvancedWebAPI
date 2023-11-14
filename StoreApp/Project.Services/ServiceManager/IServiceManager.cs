@@ -10,5 +10,6 @@ namespace Project.Services.ServiceManager
     public interface IServiceManager
     {
         public IProductService ProductService { get; }
+        public IAuthenticationService AuthenticationService { get; }
     }
 }
