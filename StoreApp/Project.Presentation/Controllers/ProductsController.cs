@@ -11,12 +11,13 @@ using WEBAPIFramework.ActionFilters;
 
 namespace WEBAPIFramework.Controllers
 {
-    [ApiVersion("1.0")]
+    //[ApiVersion("1.0")]
     [ServiceFilter(typeof(LogFilterAttribute))] 
     [ApiController]
     [Route("api/products/[action]")]
     [ResponseCache(CacheProfileName = "5mins")] // program cs de detaylı
     [HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 90)] // şeklinde override edilebilir.
+    [ApiExplorerSettings(GroupName = "v1")]
     public class ProductsController : ControllerBase
     {
         private readonly IServiceManager _serviceManager; 

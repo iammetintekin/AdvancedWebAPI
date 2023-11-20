@@ -206,3 +206,4 @@ C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\obj\Debug\net7.0\refi
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\obj\Debug\net7.0\WEBAPI.pdb
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\obj\Debug\net7.0\WEBAPI.genruntimeconfig.cache
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\obj\Debug\net7.0\ref\WEBAPI.dll
+C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\obj\Debug\net7.0\WEBAPI.sourcelink.json

@@ -36,3 +36,4 @@ C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Presentation\obj\Deb
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Presentation\obj\Debug\net7.0\refint\WEBAPIFramework.dll
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Presentation\obj\Debug\net7.0\WEBAPIFramework.pdb
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Presentation\obj\Debug\net7.0\ref\WEBAPIFramework.dll
+C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Presentation\obj\Debug\net7.0\WEBAPIFramework.sourcelink.json

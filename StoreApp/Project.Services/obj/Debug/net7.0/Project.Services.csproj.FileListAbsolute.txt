@@ -32,3 +32,4 @@ C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Services\obj\Debug\n
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Services\obj\Debug\net7.0\refint\Project.Services.dll
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Services\obj\Debug\net7.0\Project.Services.pdb
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Services\obj\Debug\net7.0\ref\Project.Services.dll
+C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Services\obj\Debug\net7.0\Project.Services.sourcelink.json

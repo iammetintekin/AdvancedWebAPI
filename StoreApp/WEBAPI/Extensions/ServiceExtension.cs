@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Project.Entity.DTOs.Product;
 using Project.Entity.Models;
 using Project.Repositories.EfCore;
@@ -190,5 +191,39 @@ namespace WEBAPI.Extensions
                 };
             });
         }
+
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>{
+                s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Product API V1", Version="v1" });
+                s.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Product API V2", Version = "v2" });
+
+                s.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+                {
+                    In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+                    Description = "Lütfen JWT bearer kullanınız",
+                    Name = "Authorization",
+                    Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+
+                s.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference()
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id="Bearer"
+                            },
+                            Name = "Bearer"
+                        },
+                        new List<string>(){"Bearer"}
+                    }
+                });
+            });
+        }
+
     }
 }

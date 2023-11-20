@@ -696,3 +696,55 @@
 2023-11-15 01:26:20.0577 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
 2023-11-15 01:26:20.0577 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
 2023-11-15 01:26:20.0718 Info Configuration initialized.
+2023-11-20 14:03:28.9314 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:03:28.9725 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:03:28.9725 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:03:28.9877 Info Configuration initialized.
+2023-11-20 14:13:48.5236 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:13:48.5339 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:13:48.5649 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:13:48.5649 Info Configuration initialized.
+2023-11-20 14:17:30.1761 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:17:30.1761 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:17:30.1761 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:17:30.1986 Info Configuration initialized.
+2023-11-20 14:18:05.9112 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:18:05.9112 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:18:05.9269 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:18:05.9269 Info Configuration initialized.
+2023-11-20 14:18:36.9036 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:18:36.9036 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:18:36.9188 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:18:36.9188 Info Configuration initialized.
+2023-11-20 14:19:07.3759 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:19:07.3839 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:19:07.3839 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:19:07.4016 Info Configuration initialized.
+2023-11-20 14:21:02.3484 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:21:02.3484 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:21:02.3705 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:21:02.3705 Info Configuration initialized.
+2023-11-20 14:21:35.4547 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:21:35.4625 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:21:35.4625 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:21:35.4625 Info Configuration initialized.
+2023-11-20 14:22:54.8646 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:22:54.8725 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:22:54.8795 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:22:54.8795 Info Configuration initialized.
+2023-11-20 14:25:10.7742 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:25:10.7742 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:25:10.7930 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:25:10.7930 Info Configuration initialized.
+2023-11-20 14:39:02.7393 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:39:02.7393 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:39:02.7576 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:39:02.7576 Info Configuration initialized.
+2023-11-20 14:53:37.9400 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:53:37.9474 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:53:37.9474 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:53:37.9629 Info Configuration initialized.
+2023-11-20 14:55:06.2756 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-11-20 14:55:06.2864 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-20 14:55:06.3008 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\WEBAPI\nlog.config
+2023-11-20 14:55:06.3008 Info Configuration initialized.

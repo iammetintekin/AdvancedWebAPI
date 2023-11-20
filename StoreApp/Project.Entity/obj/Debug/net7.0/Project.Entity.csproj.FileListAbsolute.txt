@@ -22,3 +22,4 @@ C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Entity\obj\Debug\net
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Entity\obj\Debug\net7.0\refint\Project.Entity.dll
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.pdb
 C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Entity\obj\Debug\net7.0\ref\Project.Entity.dll
+C:\Users\metot\source\repos\AdvancedWebAPI\StoreApp\Project.Entity\obj\Debug\net7.0\Project.Entity.sourcelink.json
